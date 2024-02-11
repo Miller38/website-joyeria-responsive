@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="website joyeria">
+    <meta name="keywords" content="html,css,javascript">
+    <meta name="author" content="Miller Gutierrez">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <!-- boot strap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>website Joyeria</title>
+</head>
+<body>
+    <!-- ================== Header ============================ -->
+    <div class="contenido-header"> <!-- Contenedor del encabezado de contenido -->
+        <div class="fondo" id="fondo"> <!-- Contenedor del fondo -->
+            <h1 class="texto-titulo"> <!-- Título de texto -->
+                Samantha <!-- Primer nombre -->
+                <span>Smith</span> <!-- Segundo nombre -->
+            </h1>
+        </div>
+    </div>
+    <!-- ================== navegacion ========================= -->
+    <nav class="menu"> <!-- Barra de navegación -->
+        <a href="#home">Home</a> <!-- Enlace a la sección Home -->
+        <a href="#sobre-nosotros">Sobre Nosotros</a> <!-- Enlace a la sección Sobre Nosotros -->
+        <a href="#servicios">Servicios</a> <!-- Enlace a la sección Servicios -->
+        <a href="#contacto">Contacto</a> <!-- Enlace a la sección Contacto -->
+    </nav>
+
+    <!-- ================== main ========================= -->
+    <main class="container"> <!-- Contenedor principal -->
+        <div class="row nosotros justify-content-center"> <!-- Fila con clase "nosotros" y alineación centrada -->
+            <div class="col-12 text-center"> <!-- Columna de ancho completo y alineación centrada -->
+                <h2 class="subtitulo"><span>Quienes Somos?</span></h2> <!-- Subtítulo con clase "subtitulo" -->
+                <h3 class="titulo">Nuestra pasion por piedras exoticas y la elegancia</h3> <!-- Título con clase "titulo" -->
+                <p> <!-- Párrafo -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae 
+                    fugiat accusantium dolores hic quisquam blanditiis reprehenderit 
+                    perspiciatis, distinctio maiores possimus odit. Optio nihil quibusdam 
+                    aliquam, et molestiae sunt neque fugiat! Quos amet, earum, officia iste 
+                    laborum ex sint soluta totam accusantium aliquam, quam nemo eligendi 
+                    deleniti! Explicabo, beatae quae!
+                </p>
+                <a href="#" class="enlace">Descubre tu proximo diseño</a> <!-- Enlace con clase "enlace" -->
+            </div>
+        </div>
+        <!-- ====================== productos =================== -->
+        <div class="row productos"> <!-- Fila con clase "productos" -->
+            <article class="col-12 text-center"> <!-- Columna de ancho completo y alineación centrada -->
+                <h2 class="subtitulo"><span>Lo que ofrecemos</span></h2> <!-- Subtítulo -->
+                <p class="titulo">Nuestros Productos</p> <!-- Título -->
+                <p> <!-- Párrafo -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quibusdam illo 
+                    atque ut quisquam, deserunt corrupti porro ad expedita dolorum tempora
+                    obcaecati saepe sunt non iusto magnam nisi sequi, sint aliquid. Laboriosam,
+                    minus dolorum? Voluptatem ducimus ullam sequi possimus pariatur! Libero, 
+                    error corrupti quasi facere officia corporis maxime itaque voluptatem!
+                </p>
+            </article>
+        
+            <div class="col-12"> <!-- Columna de ancho completo -->
+                <div class="row justify-content-center"> <!-- Fila con alineación centrada -->
+                    <article class="col-6 col-lg-3 py-1"> <!-- Columna con ancho específico para dispositivos pequeños y grandes -->
+                        <figure class="producto"> <!-- Figura del producto -->
+                            <img src="/img/img3.jpg" class="img-fluid" alt=""> <!-- Imagen del producto -->
+                            <figcaption class="overlay"> <!-- Leyenda del producto -->
+                                <p class="overlay-texto">Descripcion</p> <!-- Texto de la leyenda -->
+                            </figcaption>
+                        </figure>
+                    </article>
+        
+                    <!-- Repetición del mismo patrón para cada producto -->      
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="/img/img3.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Descripcion</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <!-- Repetición del mismo patrón para cada producto -->      
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="/img/img3.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Descripcion</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <!-- Repetición del mismo patrón para cada producto -->    
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="/img/img3.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Descripcion</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    <!-- Botón para ver todos los productos -->
+                    <button class="d-block btn-productos justify-content-center">Todos los productos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- =================== javascript ======================== -->
+    <script src="js/file.js"></script>
+</body>
+</html>

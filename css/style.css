@@ -1,0 +1,298 @@
+
+/*  Importación de hoja de estilos: */
+/* Importando fuentes de Google Fonts para las familias Noto Serif, Open Sans, Poppins y Raleway. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@500;600&display=swap');
+
+/* Reinicio de valores predeterminados:
+    Reiniciando márgenes, rellenos y modelo de caja para todos los elementos.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+/*  Estilos del cuerpo:
+    Estableciendo la fuente y el tamaño de letra predeterminados para el texto del cuerpo.*/
+body {
+    font-size: 20px;
+    font-family: 'Noto', sans-serif;
+}
+
+/*  Estilos de párrafo:
+    Ajustando el tamaño de letra para los párrafos.*/
+p {
+    font-size: 22px;
+}
+
+/*  Variables de color:
+    Definiendo variables de color personalizadas para facilitar el acceso.*/
+:root {
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+    --bg-color: #081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+    --bg2-color:  #ff0157;
+    --black:#000;
+}
+
+/* ========================== estilos header ==============================*/
+
+/* Estilos para el encabezado de contenido */
+.contenido-header {
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la pantalla completa */
+    background-image: url(../img/img2.jpg); /* Imagen de fondo */
+    background-position: center; /* Posición del fondo */
+    background-size: cover; /* Tamaño del fondo */
+    background-attachment: fixed; /* Fondo fijo */
+}
+
+/* Estilos para el texto del título en el encabezado de contenido */
+.contenido-header .texto-titulo {
+    width: 100%; /* Ancho completo */
+    height: 100vh; /* Altura de la pantalla completa */
+    font-size: 90px; /* Tamaño de fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    font-family: 'Noto Serif', serif; /* Familia de fuente */
+    font-style: italic; /* Estilo de fuente */
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    color: #fff; /* Color del texto */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Estilos para el span dentro del texto del título en el encabezado de contenido */
+.contenido-header .texto-titulo span {
+    color: var(--bg2-color); /* Color del fondo */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    background-color: var(--bg-color); /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    position: sticky; /* Posición fija */
+    top: 0; /* Arriba de la pantalla */
+    padding: 10px; /* Relleno */
+    z-index: 999; /* Índice z */
+    text-align: center; /* Alinear texto al centro */
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    font-family: 'Noto Serif', serif; /* Familia de fuente */
+    font-style: italic; /* Estilo de fuente */
+    margin-bottom: 60px; /* Margen inferior */
+}
+
+/* Estilos para los enlaces dentro del menú de navegación */
+.menu a {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 5px 8px; /* Relleno */
+    color: var(--white); /* Color del texto */
+    background-color: var(--bg-color); /* Color de fondo */
+    font-size: 20px; /* Tamaño de fuente */
+    transition: .5s ease all; /* Transición suave */
+    margin-left: 20px; /* Margen izquierdo */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+/* Estilos al pasar el mouse sobre los enlaces del menú de navegación */
+.menu a:hover {
+    transform: translateY(18px); /* Translación vertical */
+    background-color: var(--white); /* Color de fondo al pasar el mouse */
+    color: var(--black); /* Color del texto al pasar el mouse */
+    border-radius: 15px; /* Radio de borde */
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.8); /* Sombra */
+}
+
+/* =============================== maain ================================= */
+
+/* 
+    Sección Nosotros:
+    Estilos generales para la sección Nosotros.
+*/
+.nosotros {
+    margin-bottom: 60px; /* Margen inferior */
+}
+
+/* 
+    Subtítulo:
+    Estilos para el subtítulo de la sección Nosotros.
+*/
+.subtitulo {
+    font-size: 20px; /* Tamaño de fuente */
+    color: var(--black); /* Color del texto */
+    font-family: 'Noto Serif', serif; /* Familia de fuente */
+    font-weight: 700; /* Grosor de la fuente */
+    z-index: 2; /* Índice z */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* 
+    Subtítulo Span:
+    Estilos para el span dentro del subtítulo de la sección Nosotros.
+*/
+.subtitulo span {
+    background-color: var(--gray-light); /* Color de fondo */
+    padding: 0 15px; /* Relleno */
+    z-index: 99; /* Índice z */
+    position: relative; /* Posición relativa */
+}
+
+/* 
+    Subtítulo::after:
+    Estilos para el pseudo-elemento ::after del subtítulo de la sección Nosotros.
+*/
+.subtitulo::after {
+    content: ""; /* Contenido vacío */
+    display: inline-block; /* Mostrar como bloque en línea */
+    height: 2px; /* Altura */
+    width: 100%; /* Ancho */
+    background: var(--second-bg-color); /* Color de fondo */
+    position: relative; /* Posición relativa */
+    top: -29px; /* Posicionamiento relativo al eje Y */
+    z-index: 1; /* Índice z */
+}
+
+/* 
+    Título:
+    Estilos para el título de la sección Nosotros.
+*/
+.nosotros .titulo {
+    width: 70%; /* Ancho del contenedor */
+    font-size: 44px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin-bottom: 50px; /* Margen inferior */
+}
+
+/* 
+    Enlace:
+    Estilos para los enlaces en la sección Nosotros.
+*/
+.nosotros .enlace {
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin-top: 40px; /* Margen superior */
+    color: var(--main-color); /* Color del texto */
+    font-weight: 700; /* Grosor de la fuente */
+    border-bottom: 1px solid transparent; /* Borde inferior transparente */
+    transition: .3s ease all; /* Transición suave */
+}
+
+/* 
+    Enlace al pasar el mouse:
+    Estilos para los enlaces al pasar el mouse en la sección Nosotros.
+*/
+.nosotros .enlace:hover {
+    text-decoration: none; /* Sin decoración de texto */
+    letter-spacing: 3px; /* Espaciado entre letras */
+    border-bottom: 1px solid var(--second-bg-color); /* Borde inferior al pasar el mouse */
+}
+
+/* 
+    Sección Productos:
+    Estilos generales para la sección Productos.
+*/
+.productos {
+    background: var(--gray-light); /* Color de fondo */
+    padding: 20px; /* Relleno */
+    margin-bottom: 60px; /* Margen inferior */
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.8); /* Sombra */
+    border-radius: 35px 0px 35px 0; /* Radio de borde */
+}
+
+/* 
+    Título:
+    Estilos para el título de la sección Productos.
+*/
+.productos .titulo {
+    width: 70%; /* Ancho del contenedor */
+    font-size: 44px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin-bottom: 50px; /* Margen inferior */
+}
+
+/* 
+    Producto:
+    Estilos para los productos en la sección Productos.
+*/
+.productos .producto {
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
+}
+
+/* 
+    Overlay:
+    Estilos para la superposición de los productos en la sección Productos.
+*/
+.productos .overlay {
+    width: 0%; /* Ancho inicial cero */
+    height: 100%; /* Altura completa */
+    position: absolute; /* Posición absoluta */
+    bottom: 0; /* Abajo */
+    left: 0; /* Izquierda */
+    right: 0; /* Derecha */
+    background: var(--second-bg-color,0.1); /* Color de fondo */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    transition: .5s ease; /* Transición suave */
+}
+
+/* 
+    Overlay al pasar el mouse:
+    Estilos para la superposición al pasar el mouse en la sección Productos.
+*/
+.productos .producto:hover .overlay {
+    width: 100%; /* Ancho completo */
+    opacity: .4; /* Opacidad */
+}
+
+/* 
+    Texto del Overlay:
+    Estilos para el texto dentro del overlay en la sección Productos.
+*/
+.productos .producto .overlay-texto {
+    top: 50%; /* Posicionamiento vertical */
+    left: 50%; /* Posicionamiento horizontal */
+    position: absolute; /* Posición absoluta */
+    white-space: nowrap; /* No envolver el texto */
+    color: var(--white); /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+    transform: translate(-50%, -50%); /* Transformación de posición */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    border-top: 1px solid #fff; /* Borde superior */
+    border-bottom:1px solid #fff ; /* Borde inferior */
+}
+
+/* 
+    Botón de Productos:
+    Estilos para los botones en la sección Productos.
+*/
+.productos .btn-productos{
+    background-color: var(--main-color); /* Color de fondo */
+    color: var(--white); /* Color del texto */
+    padding: 7px 20px; /* Relleno */
+    text-transform: uppercase; /* Transformación de texto a mayúsculas */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    border: 2px solid transparent; /* Borde transparente */
+    transition: .3s ease; /* Transición suave */
+    border-radius: 5px; /* Radio de borde */
+    width: 25%; /* Ancho */
+    justify-content: center; /* Justificar contenido al centro */
+    text-align: center; /* Alinear texto al centro */
+    box-shadow:0 10px 20px 0 rgba(0,0,0,0.4); /* Sombra */
+}
+
+/* 
+    Botón de Productos al pasar el mouse:
+    Estilos para los botones al pasar el mouse en la sección Productos.
+*/
+.productos .btn-productos:hover {
+    background-color: transparent; /* Color de fondo al pasar el mouse */
+    border: 1px solid var(--bg-color); /* Borde al pasar el mouse */
+    color: var(--bg-color); /* Color del texto al pasar el mouse */
+}
